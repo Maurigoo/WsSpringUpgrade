@@ -1,7 +1,8 @@
 package modelo.entidad;
 
+//Para poder trabajar con objetos en Spring tienen que llevar la notacion
+//JavaBean
 public class Persona {
-
 	private String nombre;
 	private int edad;
 	private double peso;
@@ -23,6 +24,10 @@ public class Persona {
 	}
 	public void setPeso(double peso) {
 		this.peso = peso;
+	}
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + "]";
 	}
 	
 	
